@@ -40,9 +40,9 @@ hero:
       <div class="info-card">
         <p class="eyebrow">Stated Meetings</p>
         <ul class="meeting-list">
-          {%- for meeting in site.data.organization.meetings -%}
+          {% for meeting in site.data.organization.meetings %}
             <li><span>{{ meeting.day }}</span><span class="meeting-list__time">{{ meeting.time }}</span></li>
-          {%- endfor -%}
+          {% endfor %}
         </ul>
         <p class="info-card__foot">{{ site.data.organization.meeting_location.lodge }}, {{ site.data.organization.meeting_location.city }}, Maryland</p>
         <a class="arrow-link" href="/contact/">Meeting location details<span class="visually-hidden"> — see the contact page</span></a>
@@ -62,9 +62,9 @@ hero:
     </header>
 
     <div class="body-grid">
-      {%- for body in site.data.bodies.bodies -%}
+      {% for body in site.data.bodies.bodies %}
         {% include body-card.html body = body %}
-      {%- endfor -%}
+      {% endfor %}
     </div>
   </div>
 </section>

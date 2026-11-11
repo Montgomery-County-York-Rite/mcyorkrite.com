@@ -18,8 +18,8 @@ Cryptic Masonry is the second part of the York Rite system of Masonic degrees,
 and the last found within the Rite that deals specifically with the Hiramic
 Legend.
 
-{%- assign body_data = site.data.bodies.bodies | where: "key", page.body_key | first -%}
-{%- assign body_degrees = body_data.degrees -%}
+{% assign body_data = site.data.bodies.bodies | where: "key", page.body_key | first %}
+{% assign body_degrees = body_data.degrees %}
 
 ## Degrees of the Council
 
@@ -27,14 +27,14 @@ The Council confers the two principal Cryptic degrees, and in many
 jurisdictions adds an honorary degree as well — each with its own history:
 
 <ol class="degree-list">
-  {%- for degree in body_degrees -%}
+  {% for degree in body_degrees %}
   <li class="degree-list__item">
     <a class="degree-list__link" href="{{ degree.url }}">{{ degree.name }}</a>
-    {%- if degree.note -%}
+    {% if degree.note %}
       <span class="degree-list__note">{{ degree.note }}</span>
-    {%- endif -%}
+    {% endif %}
   </li>
-  {%- endfor -%}
+  {% endfor %}
 </ol>
 
 Their histories are indexed together on the

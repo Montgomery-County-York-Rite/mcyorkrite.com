@@ -193,6 +193,16 @@ FORBIDDEN_STRINGS = [
 
 FORBIDDEN_PATH_PARTS = ["migration-archive", "/docs/", "/scripts/", "staging"]
 
+# Escaped block-level HTML in rendered output — the signature of Markdown
+# text glued to raw HTML by Liquid whitespace-stripping (kramdown then
+# escapes the tags and they become visible text on the page).
+ESCAPED_TAG_PATTERN = re.compile(
+    r"&lt;(?:h[1-6]|p|ol|ul|li|div|span|a|table|section|nav|article)\b"
+)
+
+# Markdown heading syntax stranded inside rendered paragraph text.
+INLINE_HEADING_PATTERN = re.compile(r"[^\n#]#{1,6} [A-Z]")
+
 
 class PageParser(HTMLParser):
     """Collects metadata, links, images, and inline JSON-LD from a page."""
@@ -432,6 +442,17 @@ def main():
         for part in FORBIDDEN_PATH_PARTS:
             if part in raw:
                 errors.append(f"{rel}: references excluded source path: {part}")
+        if ESCAPED_TAG_PATTERN.search(raw):
+            errors.append(
+                f"{rel}: escaped HTML tags visible in output — a Liquid tag in "
+                "the Markdown source is stripping the blank lines that separate "
+                "text from raw HTML blocks"
+            )
+        if INLINE_HEADING_PATTERN.search(parser.text):
+            errors.append(
+                f"{rel}: Markdown heading syntax leaked into rendered text — "
+                "a Liquid block is gluing a heading to the preceding paragraph"
+            )
 
         # -- Migration coverage -----------------------------------------------------
         phrases = MIGRATION_COVERAGE.get(str(rel), [])

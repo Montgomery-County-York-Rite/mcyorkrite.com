@@ -22,9 +22,9 @@ may be eligible to join.
 ## The three bodies
 
 <div class="body-grid body-grid--compact">
-  {%- for body in site.data.bodies.bodies -%}
+  {% for body in site.data.bodies.bodies %}
     {% include body-card.html body = body %}
-  {%- endfor -%}
+  {% endfor %}
 </div>
 
 ## How the bodies relate
@@ -32,14 +32,14 @@ may be eligible to join.
 The three bodies form a recognized progression within the Rite:
 
 <ol class="progression-steps">
-  {%- for body in site.data.bodies.bodies -%}
+  {% for body in site.data.bodies.bodies %}
   <li class="progression-step progression-step--{{ body.accent }}">
     <span class="progression-step__ordinal">{{ body.ordinal }}</span>
     <span class="progression-step__name">{{ body.order_name }}</span>
     <span class="progression-step__body">{{ body.short_name }}</span>
     <a class="progression-step__link arrow-link" href="{{ body.url }}">Learn more<span class="visually-hidden"> — about {{ body.name }}</span></a>
   </li>
-  {%- endfor -%}
+  {% endfor %}
 </ol>
 
 - **The Chapter confers the Capitular degrees.** Royal Arch Masonry is the

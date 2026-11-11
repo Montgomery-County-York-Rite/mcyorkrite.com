@@ -16,7 +16,7 @@ them carries a story — drawn from the building of Solomon&rsquo;s Temple, its
 loss and restoration, and the traditions of medieval chivalry. The pages
 below give a short public history of each.
 
-{%- for body in site.data.bodies.bodies -%}
+{% for body in site.data.bodies.bodies %}
 <h2>{{ body.name }}</h2>
 <p>
   {{ body.summary }}
@@ -24,16 +24,16 @@ below give a short public history of each.
 </p>
 
 <ol class="degree-list">
-  {%- for degree in body.degrees -%}
+  {% for degree in body.degrees %}
   <li class="degree-list__item">
     <a class="degree-list__link" href="{{ degree.url }}">{{ degree.name }}</a>
-    {%- if degree.note -%}
+    {% if degree.note %}
       <span class="degree-list__note">{{ degree.note }}</span>
-    {%- endif -%}
+    {% endif %}
   </li>
-  {%- endfor -%}
+  {% endfor %}
 </ol>
-{%- endfor -%}
+{% endfor %}
 
 {% include keystone-divider.html %}
 
