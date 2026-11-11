@@ -40,12 +40,12 @@ migration-inventory.md for the per-page audit.
 | Fragment anchors exist in target pages | ✅ 0 broken |
 | Images/scripts referenced exist; every `<img>` has `alt` | ✅ |
 | Every iframe has a `title` and is `loading="lazy"` | ✅ |
-| External links (`scripts/check_external_links.py`) | ✅ 12 OK, 1 warning, 0 broken |
+| External links (`scripts/check_external_links.py`) | ✅ 12 OK, 1 warning, 0 broken — warning resolved (see remaining issues) |
 
-The single warning is `https://jmweeks.com` (the preserved site-credit link
-from the original footer): DNS resolution fails from this network. It is
-retained exactly as the original site published it; if the domain has
-lapsed, the organization may wish to update the credit line.
+The single warning had been `jmweeks.com`, the site-credit link preserved
+from the original footer, whose DNS no longer resolved. At the
+organization's direction the credit link now points to
+`https://focuswithjustin.com`.
 
 ## 4. Visual validation
 
@@ -136,8 +136,9 @@ cutover since this environment could not run Lighthouse itself.
 
 ## 10. Remaining issues (none critical)
 
-1. `jmweeks.com` site-credit link does not resolve (DNS). Preserved as
-   published; flag for the organization.
+1. ~~`jmweeks.com` site-credit link does not resolve (DNS).~~ Resolved at
+   the organization's direction: the credit now links to
+   `focuswithjustin.com` (verified HTTP 200).
 2. Final Lighthouse + calendar/map iframe visual check should be repeated
    against the live production URL after cutover (tooling constraints in
    this environment prevented running Lighthouse locally).

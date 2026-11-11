@@ -140,3 +140,6 @@ Justified redirect to `/`. Original page was an empty theme index
    prose (the all-caps "East" was a formatting quirk of the original).
 6. Calendar `src` switched from the Gmail address to the Calendar ID
    provided by the organization (explicitly instructed).
+7. Footer site-credit link updated from `jmweeks.com` to
+   `focuswithjustin.com` at the organization's direction (the maintainer
+   and credit text are unchanged).

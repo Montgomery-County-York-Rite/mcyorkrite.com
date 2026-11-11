@@ -43,7 +43,8 @@ calendar:
   # Link used for the "open the full calendar" fallback.
   web_link: "https://calendar.google.com/calendar/u/0/r?cid=606ca60259602d624c2334646cedc5b31f1272bf88aa9dbcdbe70d9416de858e%40group.calendar.google.com"
 
-# Preserved from the original site footer.
+# Preserved from the original site footer; the maintainer's link was
+# updated to focuswithjustin.com at the organization's direction.
 site_credit:
   label: Site maintained by Justin Weeks
-  href: "https://jmweeks.com"
+  href: "https://focuswithjustin.com"
