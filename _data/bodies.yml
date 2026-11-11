@@ -11,7 +11,7 @@ bodies:
     order_name: Royal Arch Masonry
     url: "/about/chapter/"
     emblem: "/assets/images/chapter.png"
-    emblem_alt: "Emblem of the Chapter of Royal Arch Masons — a triple tau within a triangle and circle"
+    emblem_alt: "Emblem of the Chapter of Royal Arch Masons: a triple tau within a triangle and circle"
     accent: burgundy
     tagline: The first part of the York Rite system
     summary: >-
@@ -35,7 +35,7 @@ bodies:
     order_name: Cryptic Masonry
     url: "/about/council/"
     emblem: "/assets/images/council.png"
-    emblem_alt: "Emblem of the Council of Cryptic Masons — a triangle, trowel, and sword"
+    emblem_alt: "Emblem of the Council of Cryptic Masons: a triangle, trowel, and sword"
     accent: cryptic
     tagline: The second part of the York Rite system
     summary: >-
@@ -58,7 +58,7 @@ bodies:
     order_name: Knighthood
     url: "/about/commandery/"
     emblem: "/assets/images/commandery.gif"
-    emblem_alt: "Emblem of the Knights Templar — a cross and crown with the motto In Hoc Signo Vinces"
+    emblem_alt: "Emblem of the Knights Templar: a cross and crown with the motto In Hoc Signo Vinces"
     accent: templar
     tagline: The final order joined in the York Rite
     summary: >-

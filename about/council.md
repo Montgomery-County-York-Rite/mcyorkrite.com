@@ -24,7 +24,7 @@ Legend.
 ## Degrees of the Council
 
 The Council confers the two principal Cryptic degrees, and in many
-jurisdictions adds an honorary degree as well — each with its own history:
+jurisdictions adds an honorary degree as well, each with its own history:
 
 <ol class="degree-list">
   {% for degree in body_degrees %}

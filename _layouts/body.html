@@ -49,7 +49,7 @@ layout: default
         <a class="rite-progression__card rite-progression__card--{{ other.accent }}" href="{{ other.url }}">
           <span class="rite-progression__name">{{ other.order_name }}</span>
           <span class="rite-progression__desc">{{ other.tagline }}</span>
-          <span class="arrow-link">Visit {{ other.short_name }}<span class="visually-hidden"> — {{ other.name }}</span></span>
+          <span class="arrow-link">Visit {{ other.short_name }}<span class="visually-hidden">: {{ other.name }}</span></span>
         </a>
       {%- endfor -%}
     </div>

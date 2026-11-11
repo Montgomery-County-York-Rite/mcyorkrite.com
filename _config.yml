@@ -1,13 +1,13 @@
-# Site configuration — Montgomery County York Rite
+# Site configuration: Montgomery County York Rite
 # ---------------------------------------------------------------
 # Production settings. Local development: bundle exec jekyll serve
 
 title: Montgomery County York Rite
 email: website-contact@mcyorkrite.com
 description: >-
-  The York Rite Bodies of Montgomery County, Maryland — a Chapter of Royal
+  The York Rite Bodies of Montgomery County, Maryland: a Chapter of Royal
   Arch Masons, a Council of Cryptic Masons, and a Commandery of Knights
-  Templar — meeting at Pentalpha Lodge #194 in Germantown, Maryland.
+  Templar, meeting at Pentalpha Lodge #194 in Germantown, Maryland.
 
 url: "https://mcyorkrite.com"
 baseurl: ""

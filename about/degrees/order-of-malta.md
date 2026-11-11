@@ -1,10 +1,10 @@
 ---
-# Order of the Knights of Malta — order history
+# Order of the Knights of Malta: order history
 layout: degree
 body_key: commandery
 kind: Order
 title: "The Order of the Knights of Malta"
-lede: "The Hospitaller heritage of service — from Jerusalem to Rhodes to Malta."
+lede: "The Hospitaller heritage of service, from Jerusalem to Rhodes to Malta."
 description: "History of the Order of Malta in the York Rite: the historical Knights Hospitaller of St. John, the order's themes of Christian service, and its place between the Mediterranean Pass and the Order of the Temple."
 breadcrumbs:
   - label: "About"
@@ -16,7 +16,7 @@ breadcrumbs:
 
 The Order of the Knights of Malta (or simply the Order of Malta) is the
 third order conferred in a Commandery. Its story is that of the
-Hospitaller knights — the Order of St. John — whose centuries of care
+Hospitaller knights, the Order of St. John, whose centuries of care
 for pilgrims and the sick, and whose defense of Christendom's sea-roads,
 carried their brotherhood from Jerusalem to Acre, to Rhodes, and
 finally to Malta, from which they take the name they still bear.
@@ -29,7 +29,7 @@ history runs for seven hundred years: military defense of the crusading
 states, the long seafaring sovereignty of Rhodes and then Malta, and
 survival beyond the loss of that island to Napoleon in 1798. When the
 Knights Templar were suppressed in the early fourteenth century, papal
-action transferred much of their property to the Hospitallers — an
+action transferred much of their property to the Hospitallers, an
 historical entanglement that makes the Malta order a natural companion
 to the Templar story.
 
@@ -42,8 +42,8 @@ conferred after the
 [Passing Order of St. Paul](/about/degrees/order-of-st-paul/) and
 before the [Order of the Temple](/about/degrees/order-of-the-temple/).
 
-Its lessons center on Christian service — hospitality, mercy, and the
-defense of the faith — drawing on the witness of Paul and the example
+Its lessons center on Christian service: hospitality, mercy, and the
+defense of the faith, drawing on the witness of Paul and the example
 of the Hospitallers.
 
 ## In the York Rite

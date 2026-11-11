@@ -12,7 +12,7 @@ seo_title: "Degree Histories"
 ---
 
 Each body of the York Rite confers its own degrees or orders, and each of
-them carries a story — drawn from the building of Solomon&rsquo;s Temple, its
+them carries a story drawn from the building of Solomon&rsquo;s Temple, its
 loss and restoration, and the traditions of medieval chivalry. The pages
 below give a short public history of each.
 
@@ -20,7 +20,7 @@ below give a short public history of each.
 <h2>{{ body.name }}</h2>
 <p>
   {{ body.summary }}
-  <a href="{{ body.url }}">About the {{ body.short_name }}&nbsp;&rarr;</a>
+  <a href="{{ body.url }}">About {{ body.short_name }}&nbsp;&rarr;</a>
 </p>
 
 <ol class="degree-list">
@@ -42,5 +42,5 @@ below give a short public history of each.
 These pages describe the generally documented history of each degree and
 order as it is publicly presented in the York Rite. They do not disclose
 ritual ceremony, and they do not claim origins that remain matters of
-tradition rather than documented fact — where scholars differ, the pages
+tradition rather than documented fact; where scholars differ, the pages
 say so.

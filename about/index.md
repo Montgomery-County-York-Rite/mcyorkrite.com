@@ -1,8 +1,8 @@
 ---
-# About the York Rite — Montgomery County
+# About the York Rite: Montgomery County
 layout: page
 title: "About the York Rite"
-lede: "The Montgomery County York Rite family — three appendant bodies, one continuing Masonic story."
+lede: "The Montgomery County York Rite family: three appendant bodies, one continuing Masonic story."
 description: "About the Montgomery County York Rite: the Chapter of Royal Arch Masons, the Council of Cryptic Masons, and the Commandery of Knights Templar, and how they fit together."
 breadcrumbs:
   - label: "About"
@@ -37,7 +37,7 @@ The three bodies form a recognized progression within the Rite:
     <span class="progression-step__ordinal">{{ body.ordinal }}</span>
     <span class="progression-step__name">{{ body.order_name }}</span>
     <span class="progression-step__body">{{ body.short_name }}</span>
-    <a class="progression-step__link arrow-link" href="{{ body.url }}">Learn more<span class="visually-hidden"> — about {{ body.name }}</span></a>
+    <a class="progression-step__link arrow-link" href="{{ body.url }}">Learn more<span class="visually-hidden">: about {{ body.name }}</span></a>
   </li>
   {% endfor %}
 </ol>

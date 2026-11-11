@@ -3,7 +3,7 @@
 layout: page
 title: "Events"
 lede: "Stated meetings, degrees, and community activities of the Montgomery County York Rite bodies."
-description: "Calendar of events and stated meetings for the Montgomery County York Rite bodies — Royal Arch Chapter, Cryptic Council, and Knights Templar Commandery — at Pentalpha Lodge #194, Germantown, Maryland."
+description: "Calendar of events and stated meetings for the Montgomery County York Rite bodies (Royal Arch Chapter, Cryptic Council, and Knights Templar Commandery) at Pentalpha Lodge #194, Germantown, Maryland."
 breadcrumbs:
   - label: "Events"
 ---

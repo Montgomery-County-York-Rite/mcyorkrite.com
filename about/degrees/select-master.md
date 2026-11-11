@@ -1,5 +1,5 @@
 ---
-# Select Master — degree history
+# Select Master: degree history
 layout: degree
 body_key: council
 kind: Degree
@@ -16,7 +16,7 @@ breadcrumbs:
 
 Select Master is the second principal degree of the Council of Cryptic
 Masons, and the degree that gives Cryptic Masonry its name. Its setting
-is the crypt — the secret vault constructed beneath the Temple — where
+is the crypt, the secret vault constructed beneath the Temple, where
 certain treasures and records were deposited for safekeeping against a
 day of loss, so that they might one day be recovered, as they are in the
 [Royal Arch degree](/about/degrees/royal-arch-mason/).
@@ -24,8 +24,8 @@ day of loss, so that they might one day be recovered, as they are in the
 ## History
 
 The Select degree's documented history runs parallel to the Royal
-Master's. Traditions of "Select Masters" — small, carefully chosen
-groups concerned with the Temple's secrets — were at work among American
+Master's. Traditions of "Select Masters" (small, carefully chosen
+groups concerned with the Temple's secrets) were at work among American
 Masons in the closing decades of the eighteenth century, and the degree
 was being conferred in some chapters and other bodies before any
 Council existed to govern it.
@@ -35,12 +35,12 @@ early nineteenth century. As Councils of Royal and Select Masters (or,
 in some jurisdictions, Councils of Cryptic Masons) were chartered,
 Royal Master and Select Master became the two principal degrees of the
 new body, and the state-by-state Grand Council system grew up alongside
-the Grand Chapters — part of the same general organization of the York
+the Grand Chapters, part of the same general organization of the York
 Rite described on the [Chapter page](/about/chapter/).
 
 With the Royal Master degree, the Select Master degree completes the
 Cryptic narrative: what was hidden by the one body of workmen is
-preserved against loss, and recovered by another — binding the whole
+preserved against loss, and recovered by another, binding the whole
 Temple story of the York Rite together.
 
 ## In the York Rite

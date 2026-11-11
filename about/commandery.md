@@ -4,7 +4,7 @@ layout: body
 body_key: commandery
 title: "Commandery of Knights Templar"
 seo_title: "Knights Templar Commandery"
-description: "The Commandery of Knights Templar of Montgomery County, Maryland — the final order joined in the York Rite, conferring three orders and one passing order."
+description: "The Commandery of Knights Templar of Montgomery County, Maryland, the final order joined in the York Rite, conferring three orders and one passing order."
 breadcrumbs:
   - label: "About"
     href: "/about/"

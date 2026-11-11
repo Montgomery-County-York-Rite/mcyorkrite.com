@@ -164,6 +164,12 @@ a:hover {
   border-radius: 2px;
 }
 
+/* The header is sticky, so keep in-page anchor targets from hiding
+   underneath it when a fragment link scrolls the page. */
+[id] {
+  scroll-margin-top: 6rem;
+}
+
 .site-header :focus-visible,
 .site-footer :focus-visible,
 .hero :focus-visible,
@@ -1073,6 +1079,7 @@ h1, h2, h3, h4 {
 .body-card--burgundy {
   border-top-color: var(--burgundy);
 }
+
 .body-card--cryptic {
   border-top-color: var(--cryptic);
 }
@@ -1271,6 +1278,20 @@ h1, h2, h3, h4 {
   height: min(72vh, 640px);
   min-height: 420px;
   border: 0;
+}
+
+/* Month-view calendars have a hard internal minimum width; below it the
+   grid is clipped. Let the frame scroll horizontally on narrow screens
+   instead of cutting columns off at the right edge. */
+@media (max-width: 600px) {
+  .calendar-frame {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .calendar-frame iframe {
+    min-width: 480px;
+  }
 }
 
 .calendar-fallback {

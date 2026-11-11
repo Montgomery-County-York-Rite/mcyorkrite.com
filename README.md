@@ -1,4 +1,4 @@
-# Montgomery County York Rite — Website
+# Montgomery County York Rite: Website
 
 The public website of the Montgomery County York Rite bodies (Maryland):
 a Chapter of Royal Arch Masons, a Council of Cryptic Masons, and a
@@ -7,7 +7,7 @@ Germantown, Maryland.
 
 - **Production URL:** <https://mcyorkrite.com>
 - **Hosting:** GitHub Pages (built by GitHub Actions from `main`)
-- **Generator:** Jekyll 4 — static HTML/CSS, no JavaScript framework
+- **Generator:** Jekyll 4, static HTML/CSS, no JavaScript framework
 
 ## Quick start
 

@@ -1,10 +1,10 @@
 ---
-# Homepage — Montgomery County York Rite
+# Homepage: Montgomery County York Rite
 layout: home
 title: "Home"
 seo_plain: true
-seo_title: "York Rite — Montgomery County, Maryland"
-description: "The York Rite Bodies of Montgomery County, Maryland — a Chapter of Royal Arch Masons, a Council of Cryptic Masons, and a Commandery of Knights Templar — meeting at Pentalpha Lodge #194, Germantown."
+seo_title: "York Rite of Montgomery County, Maryland"
+description: "The York Rite Bodies of Montgomery County, Maryland: a Chapter of Royal Arch Masons, a Council of Cryptic Masons, and a Commandery of Knights Templar, meeting at Pentalpha Lodge #194, Germantown."
 
 hero:
   eyebrow: "Montgomery County · Maryland"
@@ -26,9 +26,9 @@ hero:
       <p>
         The York Rite is one of the systems of Masonic degrees followed in the
         United States. In Montgomery County it is made up of three appendant
-        bodies — a <strong>Chapter of Royal Arch Masons</strong>, a
+        bodies: a <strong>Chapter of Royal Arch Masons</strong>, a
         <strong>Council of Cryptic Masons</strong>, and a
-        <strong>Commandery of Knights Templar</strong> — each with its own
+        <strong>Commandery of Knights Templar</strong>, each with its own
         officers, degrees or orders, and traditions.
       </p>
       <p>
@@ -45,7 +45,7 @@ hero:
           {% endfor %}
         </ul>
         <p class="info-card__foot">{{ site.data.organization.meeting_location.lodge }}, {{ site.data.organization.meeting_location.city }}, Maryland</p>
-        <a class="arrow-link" href="/contact/">Meeting location details<span class="visually-hidden"> — see the contact page</span></a>
+        <a class="arrow-link" href="/contact/">Meeting location details<span class="visually-hidden">: see the contact page</span></a>
       </div>
     </div>
   </div>
@@ -78,7 +78,7 @@ hero:
         The York Rite takes its name from the English city of York, long
         associated in Masonic tradition with the early history of the Craft.
         Its degrees and orders draw on the building of King Solomon&rsquo;s
-        Temple, its destruction, and its rebuilding — and on the traditions of
+        Temple, its destruction, and its rebuilding, and on the traditions of
         the medieval Knights Templar.
       </p>
       <p>
@@ -86,7 +86,7 @@ hero:
         Lodge #194 in Germantown, sharing in ritual, fellowship, and support
         for their communities.
       </p>
-      <a class="arrow-link" href="/about/">Read more about the York Rite<span class="visually-hidden"> — on the About page</span></a>
+      <a class="arrow-link" href="/about/">Read more about the York Rite<span class="visually-hidden">: on the About page</span></a>
     </div>
     <div class="tradition-section__art" aria-hidden="true">
       <svg viewBox="0 0 320 300" focusable="false">

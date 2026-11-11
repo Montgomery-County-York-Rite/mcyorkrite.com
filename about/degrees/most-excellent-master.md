@@ -1,5 +1,5 @@
 ---
-# Most Excellent Master — degree history
+# Most Excellent Master: degree history
 layout: degree
 body_key: chapter
 kind: Degree
@@ -28,14 +28,14 @@ American development. It emerged in the United States in the late
 eighteenth and early nineteenth centuries, as American Masons organized
 their Capitular system and the degrees that would carry the Temple story
 from its building to its loss and recovery. The degree found its place
-in the monitorial literature of the period — the era of Thomas Smith
-Webb's widely used Masonic monitors — and from there spread through the
+in the monitorial literature of the period, the era of Thomas Smith
+Webb's widely used Masonic monitors, and from there spread through the
 Grand Chapters of the several states.
 
 Its historical content is drawn from the biblical account of the
 Temple's completion under Solomon: the finish of the work, the
 sanctifying of the building, and the bringing in of the Ark. The degree
-thus answers a narrative need within the York Rite — it marks the
+thus answers a narrative need within the York Rite: it marks the
 fulfilment of the building story before the destruction and loss that
 the later degrees lament and repair.
 

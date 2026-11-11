@@ -1,5 +1,5 @@
 ---
-# Mark Master Mason — degree history
+# Mark Master Mason: degree history
 layout: degree
 body_key: chapter
 kind: Degree
@@ -22,7 +22,7 @@ to its maker, and fitted to its intended place in the building.
 ## History
 
 The custom at the heart of the degree is genuinely ancient. Medieval
-operative masons chiseled personal marks into the stones they dressed —
+operative masons chiseled personal marks into the stones they dressed,
 partly as a signature of workmanship, partly so that payment could be
 matched to work, and partly to distinguish sound stone from flawed stone
 at the building site. Marked stones survive in cathedrals and abbeys

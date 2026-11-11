@@ -1,10 +1,10 @@
 ---
-# Past Master — degree history
+# Past Master: degree history
 layout: degree
 body_key: chapter
 kind: Degree
 title: "Past Master"
-lede: "A degree born of an old constitutional requirement — that only a Master who had presided could be exalted."
+lede: "A degree born of an old constitutional requirement: that only a Master who had presided could be exalted."
 description: "History of the Past Master degree in the York Rite: the ancient rule that only a presiding Master could receive the Royal Arch, and the 'virtual Past Master' degree created to qualify candidates."
 breadcrumbs:
   - label: "About"
@@ -19,7 +19,7 @@ second degree conferred in a Royal Arch Chapter. It exists because of an
 old constitutional idea rather than a legend of its own: in the early
 years of Royal Arch Masonry, the exaltation was regarded as so closely
 connected to the governance of the Craft that only a Mason who had
-actually presided over a lodge — an installed Master — was considered
+actually presided over a lodge, an installed Master, was considered
 eligible to receive it.
 
 ## History
@@ -35,15 +35,15 @@ and remains standard in the York Rite today.
 
 The requirement itself was handled differently elsewhere. In England,
 Royal Arch membership came to be tied to the Craft degrees alone, and
-after the Grand Chapter's 2004 decisions — described on the
-[Chapter page](/about/chapter/) — no installed or presiding requirement
+after the Grand Chapter's 2004 decisions (described on the
+[Chapter page](/about/chapter/)), no installed or presiding requirement
 applies there. The United States system, working under its own Grand
 Chapters and the General Grand Chapter, retained the Past Master degree
 as a distinct step.
 
 The degree also carries genuine instruction of its own: its lessons
-concern the duties and responsibilities of the chair — presiding,
-teaching, and serving — which is why it has kept its place rather than
+concern the duties and responsibilities of the chair (presiding,
+teaching, and serving), which is why it has kept its place rather than
 becoming a mere formality.
 
 ## In the York Rite

@@ -1,5 +1,5 @@
 /*
- * Montgomery County York Rite — site behaviour
+ * Montgomery County York Rite: site behaviour
  * Vanilla JavaScript, no dependencies. Loaded with `defer`.
  *
  * 1. Accessible mobile navigation drawer
@@ -139,7 +139,7 @@
         if (!status) return;
         status.textContent = ok
           ? "Address copied."
-          : "Copy failed — please select the address manually.";
+          : "Copy failed. Please select the address manually.";
         if (statusTimer) window.clearTimeout(statusTimer);
         statusTimer = window.setTimeout(function () {
           status.textContent = "";

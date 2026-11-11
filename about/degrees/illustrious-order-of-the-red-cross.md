@@ -1,10 +1,10 @@
 ---
-# Illustrious Order of the Red Cross — order history
+# Illustrious Order of the Red Cross: order history
 layout: degree
 body_key: commandery
 kind: Order
 title: "The Illustrious Order of the Red Cross"
-lede: "Zerubbabel's plea before the court of Darius — an order of truth that completes the Temple story."
+lede: "Zerubbabel's plea before the court of Darius: an order of truth that completes the Temple story."
 description: "History of the Illustrious Order of the Red Cross: its setting in the return from the Babylonian captivity, its entry into the American Templar system, and its place as the first order of the Commandery."
 breadcrumbs:
   - label: "About"
@@ -16,8 +16,8 @@ breadcrumbs:
 
 The Illustrious Order of the Red Cross is the first order conferred in
 a Commandery. Its setting is not medieval but ancient: the court of the
-Persian king Darius, and the appeal of Zerubbabel — the prince who led
-the return from the Babylonian captivity — for the rebuilding of the
+Persian king Darius, and the appeal of Zerubbabel, the prince who led
+the return from the Babylonian captivity, for the rebuilding of the
 Temple at Jerusalem. The order's great lesson is Truth, and its
 narrative brings the York Rite's Temple story to its political
 rescue: the restoration decreed, the work resumed.
@@ -33,8 +33,8 @@ tradition, and American Templar masons absorbed and adapted one such
 order into their developing system.
 
 By the time the American Commandery system was organized in the early
-nineteenth century — the period that produced the Grand Encampment of
-the United States — the Red Cross had taken its fixed place as the
+nineteenth century, the period that produced the Grand Encampment of
+the United States, the Red Cross had taken its fixed place as the
 first order of the five-order American series: an order of Jewish and
 Persian antiquity that carries the candidate from the Cryptic story of
 the Temple's loss to the threshold of knighthood.

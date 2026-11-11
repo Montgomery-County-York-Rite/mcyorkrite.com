@@ -1,10 +1,10 @@
 ---
-# Order of the Temple — order history
+# Order of the Temple: order history
 layout: degree
 body_key: commandery
 kind: Order
 title: "The Order of the Temple"
-lede: "The crowning order of the York Rite — Christian knighthood in commemoration of the Poor Fellow-Soldiers of Christ."
+lede: "The crowning order of the York Rite: Christian knighthood in commemoration of the Poor Fellow-Soldiers of Christ."
 description: "History of the Order of the Temple in the York Rite: the founding and suppression of the medieval Knights Templar, the emergence of Masonic Templar orders in the eighteenth century, and the Grand Encampment's position on disputed origins."
 breadcrumbs:
   - label: "About"
@@ -16,8 +16,8 @@ breadcrumbs:
 
 The Order of the Temple is the final and crowning order of the York
 Rite. Its theme is the making of a knight after the manner of the
-medieval Poor Fellow-Soldiers of Christ and of the Temple of Solomon —
-the Knights Templar — and its ceremony brings the pilgrim of the whole
+medieval Poor Fellow-Soldiers of Christ and of the Temple of Solomon,
+the Knights Templar, and its ceremony brings the pilgrim of the whole
 Rite, from the building of the first Temple onward, to a solemn
 conclusion at the foot of the cross.
 
@@ -33,7 +33,7 @@ crusader states. After the fall of the last crusader strongholds, the
 order's wealth and independence made it a target: King Philip IV of
 France moved against the Templars in 1307, and Pope Clement V suppressed
 the order at the Council of Vienne in 1312, transferring much of its
-property to the Hospitallers — the Knights of St. John, whose
+property to the Hospitallers, the Knights of St. John, whose
 [Masonic commemoration](/about/degrees/order-of-malta/) precedes this
 order in the Commandery.
 
@@ -49,8 +49,8 @@ Templar of the United States, established in 1826.
 The relationship between the medieval order and the Masonic one is a
 matter the Grand Encampment addresses directly, and the
 [Commandery page](/about/commandery/) preserves its statement: claims
-that Freemasonry was founded by the Templars — or that fugitive
-Templars took refuge within it — are acknowledged as theories, with no
+that Freemasonry was founded by the Templars, or that fugitive
+Templars took refuge within it, are acknowledged as theories, with no
 proof to justify them. The Order of the Temple asks its knights to
 carry on the *spirit* of the historical order: courage, discipline, and
 service in defense of the Christian faith.

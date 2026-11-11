@@ -95,7 +95,7 @@ on pages that use them.
 | Body card | `_includes/body-card.html` | Emblem medallion, ordinal, name, tagline, summary, link |
 | Info card | `.info-card` | Meeting summary on the homepage |
 | Meeting info | `_includes/meeting-info.html` | Schedule table + location (+ map on contact) |
-| Calendar | `_includes/calendar.html` | Lazy iframe, `noscript` and always-visible fallback link, timezone note |
+| Calendar | `_includes/calendar.html` | Lazy iframe with `ctz` timezone parameter, `noscript` and always-visible fallback link |
 | Contact actions | `_includes/contact-actions.html` | Email button, copy-address button with live status, directions link |
 | Keystone divider | `_includes/keystone-divider.html` | Section ornament (decorative, `aria-hidden`) |
 | Buttons | `.btn--primary/-gold/-outline/-outline-light` | 44 px minimum target height |

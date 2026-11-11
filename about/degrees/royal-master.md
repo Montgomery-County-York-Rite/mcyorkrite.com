@@ -1,10 +1,10 @@
 ---
-# Royal Master — degree history
+# Royal Master: degree history
 layout: degree
 body_key: council
 kind: Degree
 title: "Royal Master"
-lede: "Conversations at the building of the Temple — the Cryptic story begins before its loss."
+lede: "Conversations at the building of the Temple: the Cryptic story begins before its loss."
 description: "History of the Royal Master degree: its early nineteenth-century American development, its setting among the Temple workmen, and its role as the first principal degree of the Cryptic Council."
 breadcrumbs:
   - label: "About"
@@ -18,7 +18,7 @@ Royal Master is one of the two principal degrees conferred in a Council
 of Cryptic Masons. Its setting is deliberate and striking: it takes
 place before the death of the chief architect of the Temple, so the
 candidate hears conversations that look forward to a loss the other
-degrees narrate only after the fact — making plain why what will be
+degrees narrate only after the fact, making plain why what will be
 lost is worth preserving.
 
 ## History
@@ -30,7 +30,7 @@ organized Council system itself. Degrees of this character had
 circulated among Masons for some years before Councils of Royal and
 Select Masters were formally constituted in the 1810s and 1820s, and
 when the Councils took shape they gathered these degrees into a coherent
-body — one organized around the Temple's secrets and their safekeeping.
+body, one organized around the Temple's secrets and their safekeeping.
 
 The name "Cryptic" itself points to the shared theme: the vault, the
 crypt beneath the Temple, and the deposits entrusted there. The Royal
