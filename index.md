@@ -3,6 +3,7 @@
 layout: home
 title: "Home"
 seo_plain: true
+seo_title: "York Rite — Montgomery County, Maryland"
 description: "The York Rite Bodies of Montgomery County, Maryland — a Chapter of Royal Arch Masons, a Council of Cryptic Masons, and a Commandery of Knights Templar — meeting at Pentalpha Lodge #194, Germantown."
 
 hero:
