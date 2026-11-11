@@ -143,3 +143,11 @@ Justified redirect to `/`. Original page was an empty theme index
 7. Footer site-credit link updated from `jmweeks.com` to
    `focuswithjustin.com` at the organization's direction (the maintainer
    and credit text are unchanged).
+8. 2026 addition (by request): each body page now presents its degrees or
+   orders as links to dedicated history pages under `/about/degrees/`, and
+   a degree-histories index was added there. The original degree/order
+   names and sentences are unchanged; the Council page gained a new
+   "Degrees of the Council" section (Royal Master, Select Master, and the
+   honorary Super Excellent Master degree) that the original site never
+   enumerated. The history texts state documented facts only, hedge
+   disputed origins, and disclose no ritual.

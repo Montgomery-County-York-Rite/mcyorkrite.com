@@ -19,6 +19,15 @@ bodies:
       Masonic degrees. Royal Arch Masons meet as a Chapter, which confers
       four degrees.
     ordinal: First
+    degrees:
+      - name: Mark Master Mason
+        url: "/about/degrees/mark-master-mason/"
+      - name: Past Master
+        url: "/about/degrees/past-master/"
+      - name: Most Excellent Master
+        url: "/about/degrees/most-excellent-master/"
+      - name: Royal Arch Mason
+        url: "/about/degrees/royal-arch-mason/"
 
   - key: council
     name: Council of Cryptic Masons
@@ -34,6 +43,14 @@ bodies:
       degrees, and the last found within the Rite that deals specifically
       with the Hiramic Legend.
     ordinal: Second
+    degrees:
+      - name: Royal Master
+        url: "/about/degrees/royal-master/"
+      - name: Select Master
+        url: "/about/degrees/select-master/"
+      - name: Super Excellent Master
+        url: "/about/degrees/super-excellent-master/"
+        note: "Conferred as an honorary degree in many Councils"
 
   - key: commandery
     name: Commandery of Knights Templar
@@ -48,3 +65,14 @@ bodies:
       The Knights Templar is the final order joined in the York Rite,
       modeled on the historical medieval order to carry on its spirit.
     ordinal: Final
+    degrees:
+      - name: The Illustrious Order of the Red Cross
+        url: "/about/degrees/illustrious-order-of-the-red-cross/"
+      - name: The Passing Order of St. Paul
+        url: "/about/degrees/order-of-st-paul/"
+        note: "Also called the Mediterranean Pass"
+      - name: The Order of the Knights of Malta
+        url: "/about/degrees/order-of-malta/"
+        note: "Or simply the Order of Malta"
+      - name: The Order of the Temple
+        url: "/about/degrees/order-of-the-temple/"

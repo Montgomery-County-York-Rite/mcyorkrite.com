@@ -21,6 +21,9 @@ items:
       - label: Knights Templar
         href: "/about/commandery/"
         description: The final order of the York Rite
+      - label: Degree Histories
+        href: "/about/degrees/"
+        description: The history of each degree and order
 
   - label: Events
     href: "/events/"

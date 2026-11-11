@@ -42,6 +42,18 @@ REQUIRED_PAGES = [
     "about/chapter/index.html",
     "about/council/index.html",
     "about/commandery/index.html",
+    "about/degrees/index.html",
+    "about/degrees/mark-master-mason/index.html",
+    "about/degrees/past-master/index.html",
+    "about/degrees/most-excellent-master/index.html",
+    "about/degrees/royal-arch-mason/index.html",
+    "about/degrees/royal-master/index.html",
+    "about/degrees/select-master/index.html",
+    "about/degrees/super-excellent-master/index.html",
+    "about/degrees/illustrious-order-of-the-red-cross/index.html",
+    "about/degrees/order-of-st-paul/index.html",
+    "about/degrees/order-of-malta/index.html",
+    "about/degrees/order-of-the-temple/index.html",
     "events/index.html",
     "contact/index.html",
     "404.html",
@@ -117,6 +129,53 @@ MIGRATION_COVERAGE = {
         "Second Wednesday",
         "7:30 p.m.",
         "google.com/maps",
+    ],
+    "about/degrees/index.html": [
+        "Mark Master Mason",
+        "Royal Master",
+        "Select Master",
+        "The Order of the Temple",
+    ],
+    "about/degrees/mark-master-mason/index.html": [
+        "operative masons",
+        "eighteenth century",
+    ],
+    "about/degrees/past-master/index.html": [
+        "Virtual Past Master",
+    ],
+    "about/degrees/most-excellent-master/index.html": [
+        "completion of King Solomon",
+    ],
+    "about/degrees/royal-arch-mason/index.html": [
+        "pure, antient Masonry",
+        "10 November 2004",
+    ],
+    "about/degrees/royal-master/index.html": [
+        "early nineteenth century",
+    ],
+    "about/degrees/select-master/index.html": [
+        "Councils of Royal and Select Masters",
+    ],
+    "about/degrees/super-excellent-master/index.html": [
+        "honorary degree",
+        "Babylon",
+    ],
+    "about/degrees/illustrious-order-of-the-red-cross/index.html": [
+        "Zerubbabel",
+        "Truth",
+    ],
+    "about/degrees/order-of-st-paul/index.html": [
+        "Mediterranean Pass",
+    ],
+    "about/degrees/order-of-malta/index.html": [
+        "Hospitaller",
+        "Rhodes",
+    ],
+    "about/degrees/order-of-the-temple/index.html": [
+        "1119",
+        "Council of Vienne in 1312",
+        "1826",
+        "no proof to justify them",
     ],
     "404.html": ["Page not found"],
 }

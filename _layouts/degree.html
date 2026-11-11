@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{%- comment -%}
+  Degree / order history page. Front matter provides body_key so the page
+  can identify its conferring body and sibling degrees from _data/bodies.yml.
+{%- endcomment -%}
+
+{%- assign body_data = site.data.bodies.bodies | where: "key", page.body_key | first -%}
+{%- assign siblings = body_data.degrees | where_exp: "d", "d.url != page.url" -%}
+
+<section class="page-band">
+  <div class="container">
+    <div class="page-band__text">
+      <p class="page-band__eyebrow">{{ body_data.order_name }}{% if page.kind %} · {{ page.kind }}{% endif %}</p>
+      <h1 class="page-band__title">{{ page.title }}</h1>
+      {%- if page.lede -%}
+        <p class="page-band__lede">{{ page.lede }}</p>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="prose prose--page">
+    {{ content }}
+  </div>
+
+  <nav class="degree-nav" aria-label="Other degrees and orders of the {{ body_data.short_name }}">
+    <h2 class="degree-nav__title">{{ body_data.order_name }} within the York Rite</h2>
+    <ul class="degree-nav__list">
+      <li class="degree-nav__item degree-nav__item--parent">
+        <a class="degree-nav__link arrow-link" href="{{ body_data.url }}">About {{ body_data.short_name }}</a>
+      </li>
+      {%- for sibling in siblings -%}
+        <li class="degree-nav__item">
+          <a class="degree-nav__link" href="{{ sibling.url }}">{{ sibling.name }}</a>
+          {%- if sibling.note -%}
+            <span class="degree-nav__note">{{ sibling.note }}</span>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+      <li class="degree-nav__item">
+        <a class="degree-nav__link" href="/about/degrees/">All degree histories</a>
+      </li>
+    </ul>
+  </nav>
+</div>

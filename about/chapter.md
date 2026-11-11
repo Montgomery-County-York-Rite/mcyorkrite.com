@@ -20,12 +20,24 @@ degrees.
 ## Degrees of the Chapter
 
 Royal Arch Masons meet as a Chapter, and the Royal Arch Chapter confers four
-degrees:
+degrees, each with its own history:
 
-1. **Mark Master Mason**
-2. **Past Master**
-3. **Most Excellent Master**
-4. **Royal Arch Mason**
+{%- assign body_data = site.data.bodies.bodies | where: "key", page.body_key | first -%}
+{%- assign body_degrees = body_data.degrees -%}
+
+<ol class="degree-list">
+  {%- for degree in body_degrees -%}
+  <li class="degree-list__item">
+    <a class="degree-list__link" href="{{ degree.url }}">{{ degree.name }}</a>
+    {%- if degree.note -%}
+      <span class="degree-list__note">{{ degree.note }}</span>
+    {%- endif -%}
+  </li>
+  {%- endfor -%}
+</ol>
+
+A fuller account of each degree is on its history page, and the four are
+indexed together on the [degree histories](/about/degrees/) page.
 
 ## Historical background
 

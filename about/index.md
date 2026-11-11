@@ -52,6 +52,10 @@ The three bodies form a recognized progression within the Rite:
 Each body is separately constituted and operates independently, while the
 three together make up the York Rite family in Montgomery County.
 
+Every degree and order also carries its own story. Short public histories
+are collected on the [degree histories](/about/degrees/) page, and each is
+linked from its body's page.
+
 {% include keystone-divider.html %}
 
 ## Visit us

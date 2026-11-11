@@ -44,12 +44,25 @@ States. This is unique among Masonic bodies as most report to the state level
 alone.
 
 The Knights Templar confer three orders, and one passing order as opposed to
-the standard degree system found elsewhere in Freemasonry:
+the standard degree system found elsewhere in Freemasonry, each with its own
+history:
 
-1. **The Illustrious Order of the Red Cross**
-2. **The Passing Order of St. Paul** (or the Mediterranean Pass)
-3. **The Order of the Knights of Malta** (or simply Order of Malta)
-4. **The Order of the Temple**
+{%- assign body_data = site.data.bodies.bodies | where: "key", page.body_key | first -%}
+{%- assign body_degrees = body_data.degrees -%}
+
+<ol class="degree-list">
+  {%- for degree in body_degrees -%}
+  <li class="degree-list__item">
+    <a class="degree-list__link" href="{{ degree.url }}">{{ degree.name }}</a>
+    {%- if degree.note -%}
+      <span class="degree-list__note">{{ degree.note }}</span>
+    {%- endif -%}
+  </li>
+  {%- endfor -%}
+</ol>
+
+Their histories are indexed together on the
+[degree histories](/about/degrees/) page.
 
 The Commandery completes the York Rite, following the
 [Chapter of Royal Arch Masons](/about/chapter/) and the

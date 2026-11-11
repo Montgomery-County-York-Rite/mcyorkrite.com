@@ -775,6 +775,15 @@ h1, h2, h3, h4 {
   margin: 0 0 0.6rem;
 }
 
+.page-band__eyebrow {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--gold-bright);
+  margin: 0 0 1rem;
+}
+
 .page-band__lede {
   font-family: var(--font-serif);
   font-style: italic;
@@ -1434,6 +1443,123 @@ h1, h2, h3, h4 {
 .rite-progression__card .arrow-link {
   margin-top: 0.7rem;
   font-size: 0.92rem;
+}
+
+/* Degree navigation (sibling degrees on degree history pages) */
+
+.degree-nav {
+  margin-top: var(--section-y);
+  padding-bottom: var(--section-y);
+}
+
+.degree-nav__title {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+}
+
+.degree-nav__list {
+  list-style: none;
+  margin: 1.25rem 0 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+@media (min-width: 700px) {
+  .degree-nav__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.degree-nav__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  background: var(--white);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem;
+}
+
+.degree-nav__item--parent {
+  border-left-color: var(--burgundy);
+}
+
+.degree-nav__link {
+  font-weight: 600;
+  color: var(--navy);
+  text-decoration: none;
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 0.15em;
+  align-self: flex-start;
+}
+
+.degree-nav__link:hover {
+  color: var(--burgundy);
+  border-bottom-color: var(--burgundy);
+}
+
+.degree-nav__note {
+  font-size: 0.85rem;
+  color: var(--slate-soft);
+}
+
+/* Degree list on body pages */
+
+.degree-list {
+  list-style: none;
+  margin: 1.25rem 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+  counter-reset: degree;
+}
+
+.degree-list__item {
+  position: relative;
+  counter-increment: degree;
+  background: var(--white);
+  border: 1px solid var(--hairline);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  padding: 0.9rem 1.1rem 0.9rem 2.9rem;
+}
+
+.degree-list__item::before {
+  content: counter(degree);
+  position: absolute;
+  left: 1.1rem;
+  top: 0.95rem;
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--bronze);
+}
+
+.degree-list__link {
+  font-family: var(--font-serif);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--navy);
+  text-decoration: none;
+}
+
+.degree-list__link:hover {
+  color: var(--burgundy);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.degree-list__note {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--slate-soft);
+}
+
+@media (min-width: 700px) {
+  .degree-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* 18. Divider ornament */
