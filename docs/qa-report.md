@@ -8,7 +8,7 @@ described as verified that was not executed.
 
 | Check | Result |
 |---|---|
-| `bundle install` with locked dependencies (`Gemfile.lock`, Ruby 3.3.6) | ✅ Pass |
+| `bundle install` with locked dependencies (`Gemfile.lock`, Ruby 3.3.x) | ✅ Pass locally (3.3.6) and in CI (3.3.13) |
 | `jekyll build --strict_front_matter` (JEKYLL_ENV=production) | ✅ Pass, no warnings |
 | Production URLs generated for all seven known pages | ✅ `/`, `/about/`, `/about/chapter/`, `/about/council/`, `/about/commandery/`, `/events/`, `/contact/` |
 | `/about/chapter/` produced as a directory index (not `.html` URL) | ✅ |
@@ -127,12 +127,26 @@ cutover since this environment could not run Lighthouse itself.
 
 ## 9. Deployment validation status
 
+The pipeline was exercised end-to-end on GitHub's own infrastructure:
+
 | Item | Status |
 |---|---|
-| Workflow builds the *generated* site (uploads `_site` artifact, deploys via `actions/deploy-pages@v4`) | ✅ configured; the artifact path is validated by the CI build itself |
-| Workflow executed end-to-end on GitHub infrastructure | ⏳ Not yet — requires the push + Pages source setting (administrator). This is the honest boundary of local verification |
-| Pages source / custom domain / Enforce HTTPS | ⏳ Administrator actions documented in deployment.md; cannot be configured from code |
-| Live production site | Untouched — DNS cutover remains an explicit organizational decision |
+| Workflow triggered on push to `main` | ✅ Run #3 (`140eea3`) |
+| Setup Ruby (provisions 3.3.13; Gemfile allows `~> 3.3`) and locked bundle install | ✅ Pass |
+| Jekyll production build (`--strict_front_matter`) on `ubuntu-24.04` | ✅ Pass |
+| `tests/validate_site.py` executed in CI against the CI build | ✅ Pass |
+| Pages artifact upload (`actions/upload-pages-artifact@v3`) | ✅ Pass |
+| Deploy (`actions/deploy-pages@v4`) | ⏳ **Blocked on one administrator setting** — the repository has never had GitHub Pages enabled (`has_pages: false`, confirmed via the GitHub API). Until **Settings → Pages → Build and deployment → Source: "GitHub Actions"** is selected, the deploy step fails. A deploy key cannot change repository settings, so this is reported rather than claimed done |
+| Pages source / custom domain / Enforce HTTPS | ⏳ Same administrator pass; exact steps and DNS records in deployment.md |
+| Live production site | Untouched — the existing site keeps serving until DNS is pointed at Pages, which remains an explicit organizational decision |
+
+Two earlier runs surfaced and fixed real CI defects: a bleeding-edge
+Bundler 4 lockfile the runner toolchain could not satisfy (re-locked to the
+widely supported 2.5 line with Linux platforms added), and a Ruby patch
+pin (`3.3.6`) that clashed with the runner's newer `3.3.13` (relaxed to
+`~> 3.3`). The build+validate half of the pipeline is therefore proven
+green on GitHub infrastructure; only the repository-level Pages enablement
+remains.
 
 ## 10. Remaining issues (none critical)
 
