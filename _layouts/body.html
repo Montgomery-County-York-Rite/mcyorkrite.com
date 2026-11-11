@@ -1,0 +1,70 @@
+---
+layout: default
+---
+
+{%- comment -%}
+  Dedicated template for the three York Rite bodies (Chapter, Council,
+  Commandery). Pulls identity from _data/bodies.yml via page.body_key.
+{%- endcomment -%}
+
+{%- assign body_data = site.data.bodies.bodies | where: "key", page.body_key | first -%}
+
+<section class="body-hero body-hero--{{ body_data.accent }}" aria-labelledby="body-title">
+  <div class="body-hero__ornament" aria-hidden="true">
+    <svg viewBox="0 0 1200 300" preserveAspectRatio="xMidYMax slice" focusable="false">
+      <g fill="none" stroke="#BA9555" stroke-width="1.5">
+        <path d="M-60 300 A 560 560 0 0 1 1260 300" stroke-opacity="0.10"/>
+        <path d="M60 300 A 480 480 0 0 1 1140 300" stroke-opacity="0.12"/>
+        <path d="M180 300 A 420 420 0 0 1 1020 300" stroke-opacity="0.09"/>
+        <path d="M300 300 A 300 300 0 0 1 900 300" stroke-opacity="0.07"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="container body-hero__inner">
+    <div class="body-hero__text">
+      <p class="body-hero__eyebrow">{{ body_data.order_name }}</p>
+      <h1 class="body-hero__title" id="body-title">{{ body_data.name }}</h1>
+      <p class="body-hero__tagline">{{ body_data.tagline }}</p>
+    </div>
+    <div class="body-hero__medallion">
+      <img src="{{ body_data.emblem }}" alt="{{ body_data.emblem_alt }}"
+           width="180" height="180" loading="eager" decoding="async">
+    </div>
+  </div>
+  <div class="body-hero__baseline" aria-hidden="true"></div>
+</section>
+
+<div class="container">
+  <div class="prose prose--body">
+    {{ content }}
+  </div>
+
+  {%- comment -%} Progression navigation: the body before and after this one. {%- endcomment -%}
+  {%- assign others = site.data.bodies.bodies | where_exp: "b", "b.key != page.body_key" -%}
+  <nav class="rite-progression" aria-label="Continue through the York Rite">
+    <h2 class="rite-progression__title">Continue through the Rite</h2>
+    <div class="rite-progression__grid">
+      {%- for other in others -%}
+        <a class="rite-progression__card rite-progression__card--{{ other.accent }}" href="{{ other.url }}">
+          <span class="rite-progression__name">{{ other.order_name }}</span>
+          <span class="rite-progression__desc">{{ other.tagline }}</span>
+          <span class="arrow-link">Visit {{ other.short_name }}<span class="visually-hidden"> — {{ other.name }}</span></span>
+        </a>
+      {%- endfor -%}
+    </div>
+  </nav>
+</div>
+
+<section class="cta-band">
+  <div class="container cta-band__inner">
+    <div class="cta-band__text">
+      <h2 class="cta-band__title">{{ page.cta.title | default: "Interested in learning more?" }}</h2>
+      <p class="cta-band__text-lede">{{ page.cta.text | default: "If you are a Master Mason in good standing and would like to find out more, please get in touch." }}</p>
+    </div>
+    <div class="cta-band__actions">
+      <a class="btn btn--gold" href="/contact/">Contact Us</a>
+      <a class="btn btn--outline-light" href="/events/">See Events</a>
+    </div>
+  </div>
+</section>

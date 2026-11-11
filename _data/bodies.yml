@@ -1,0 +1,50 @@
+# The three York Rite bodies. The `order` field preserves the ritual
+# progression (Chapter → Council → Commandery) used across the site.
+#
+# Accents are design-system tokens from assets/css/main.css and are used
+# only for wayfinding, never as the sole carrier of meaning.
+
+bodies:
+  - key: chapter
+    name: Chapter of Royal Arch Masons
+    short_name: The Chapter
+    order_name: Royal Arch Masonry
+    url: "/about/chapter/"
+    emblem: "/assets/images/chapter.png"
+    emblem_alt: "Emblem of the Chapter of Royal Arch Masons — a triple tau within a triangle and circle"
+    accent: burgundy
+    tagline: The first part of the York Rite system
+    summary: >-
+      Royal Arch Masonry is the first part of the York Rite system of the
+      Masonic degrees. Royal Arch Masons meet as a Chapter, which confers
+      four degrees.
+    ordinal: First
+
+  - key: council
+    name: Council of Cryptic Masons
+    short_name: The Council
+    order_name: Cryptic Masonry
+    url: "/about/council/"
+    emblem: "/assets/images/council.png"
+    emblem_alt: "Emblem of the Council of Cryptic Masons — a triangle, trowel, and sword"
+    accent: cryptic
+    tagline: The second part of the York Rite system
+    summary: >-
+      Cryptic Masonry is the second part of the York Rite system of Masonic
+      degrees, and the last found within the Rite that deals specifically
+      with the Hiramic Legend.
+    ordinal: Second
+
+  - key: commandery
+    name: Commandery of Knights Templar
+    short_name: The Commandery
+    order_name: Knighthood
+    url: "/about/commandery/"
+    emblem: "/assets/images/commandery.gif"
+    emblem_alt: "Emblem of the Knights Templar — a cross and crown with the motto In Hoc Signo Vinces"
+    accent: templar
+    tagline: The final order joined in the York Rite
+    summary: >-
+      The Knights Templar is the final order joined in the York Rite,
+      modeled on the historical medieval order to carry on its spirit.
+    ordinal: Final

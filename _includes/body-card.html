@@ -1,0 +1,23 @@
+{%- comment -%}
+  Feature card for one of the three York Rite bodies.
+  Usage: {% for body in site.data.bodies.bodies %}{% include body-card.html body = body %}{% endfor %}
+{%- endcomment -%}
+
+<article class="body-card body-card--{{ include.body.accent }}">
+  <div class="body-card__medallion">
+    <img class="body-card__emblem"
+         src="{{ include.body.emblem }}"
+         alt="{{ include.body.emblem_alt }}"
+         width="225" height="225"
+         loading="lazy" decoding="async">
+  </div>
+
+  <p class="body-card__ordinal">{{ include.body.ordinal }} of the three bodies</p>
+  <h3 class="body-card__title">{{ include.body.name }}</h3>
+  <p class="body-card__tagline">{{ include.body.tagline }}</p>
+  <p class="body-card__summary">{{ include.body.summary }}</p>
+
+  <a class="body-card__link arrow-link" href="{{ include.body.url }}">
+    {{ include.body.short_name }}<span class="visually-hidden"> — read more about {{ include.body.name }}</span>
+  </a>
+</article>

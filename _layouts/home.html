@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  {% include seo.html %}
+
+  {%- comment -%}
+    Cautious CSP. GitHub Pages cannot set HTTP headers, so this meta policy is
+    the strongest compatible option. The sha256 hash allows the static
+    structured-data block in _includes/seo-jsonld.html, which is byte-identical
+    on every page. frame-src permits only the Google Calendar and Maps embeds.
+  {%- endcomment -%}
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self' 'sha256-k9dghCoYhWFAaEQXG+ang2IKeC1Q+xH6+6VmP9qrmZg='; img-src 'self' data:; font-src 'self'; connect-src 'self'; frame-src https://calendar.google.com https://www.google.com; base-uri 'self'; form-action 'self'">
+
+  <link rel="preload" href="/assets/fonts/eb-garamond-latin-600-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/source-sans-3-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" href="/assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/assets/images/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <script src="/assets/js/main.js" defer></script>
+</head>
+
+<body class="page page--home">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  {% include header.html %}
+
+  <main id="main-content" class="site-main" tabindex="-1">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>

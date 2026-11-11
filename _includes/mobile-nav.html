@@ -1,0 +1,15 @@
+{%- comment -%}
+  Accessible mobile navigation drawer. Hidden state is managed in
+  assets/js/main.js via [hidden] + aria-expanded on the toggle button.
+{%- endcomment -%}
+
+<div class="mobile-nav" id="mobile-nav" hidden>
+  <div class="mobile-nav__scrim" data-nav-close></div>
+  <nav class="mobile-nav__panel" aria-label="Mobile" data-nav-panel>
+    <p class="mobile-nav__heading">Menu</p>
+    {% include navigation.html variant = "mobile" %}
+    <div class="mobile-nav__meta">
+      <a class="mobile-nav__contact" href="mailto:{{ site.data.organization.email }}">{{ site.data.organization.email }}</a>
+    </div>
+  </nav>
+</div>

@@ -1,0 +1,24 @@
+---
+layout: default
+---
+
+{%- comment -%}
+  Generic content page: title band, optional lede, then Markdown prose.
+{%- endcomment -%}
+
+<div class="page-band">
+  <div class="container">
+    <div class="page-band__text">
+      <h1 class="page-band__title">{{ page.title }}</h1>
+      {%- if page.lede -%}
+        <p class="page-band__lede">{{ page.lede }}</p>
+      {%- endif -%}
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="prose prose--page">
+    {{ content }}
+  </div>
+</div>

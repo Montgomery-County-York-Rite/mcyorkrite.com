@@ -1,0 +1,43 @@
+name: Validate
+
+# Runs on pull requests and any push to a non-production branch.
+# Builds the site and validates the generated output without deploying.
+
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+permissions:
+  contents: read
+
+env:
+  RUBY_VERSION: "3.3"
+
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true
+
+      - name: Setup Python (validation tooling)
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build Jekyll site (production settings)
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build --strict_front_matter --trace
+
+      - name: Validate generated output
+        run: |
+          python3 tests/validate_site.py _site

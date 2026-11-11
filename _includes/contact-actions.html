@@ -1,0 +1,28 @@
+{%- comment -%}
+  Contact actions: clickable email, copyable address, and directions link.
+  Parameter: show_copy — "true" enables the copy-address button.
+{%- endcomment -%}
+
+{%- assign loc = site.data.organization.meeting_location -%}
+{%- capture full_address -%}{{ loc.lodge }}, {{ loc.street }}, {{ loc.city }}, {{ loc.state_code }} {{ loc.postal_code }}{%- endcapture -%}
+
+<div class="contact-actions">
+  <a class="btn btn--primary" href="mailto:{{ site.data.organization.email }}">
+    Email {{ site.data.organization.short_name }}
+  </a>
+
+  {%- if include.show_copy == "true" -%}
+    <span class="copy-address">
+      <button class="btn btn--outline" type="button" data-copy-address="{{ full_address | strip }}">
+        <span data-copy-label>Copy address</span>
+      </button>
+      <span class="copy-address__status" role="status" aria-live="polite" data-copy-status></span>
+    </span>
+  {%- endif -%}
+
+  <a class="btn btn--outline"
+     href="https://www.google.com/maps/dir/?api=1&destination={{ loc.street | replace: ' ', '+' }},{{ loc.city }},{{ loc.state_code }},{{ loc.postal_code }}"
+     target="_blank" rel="noopener">
+    Get directions
+  </a>
+</div>

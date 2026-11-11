@@ -1,0 +1,49 @@
+# Organization facts. Single source of truth for contact details, meeting
+# information, and calendar configuration. Update here, not in templates.
+#
+# Sources:
+# - email, address, schedule: https://mcyorkrite.com/contact/ (original site)
+# - calendar id: provided by the chapter secretary (replaces the legacy
+#   mdyorkrite@gmail.com embed so the calendar is managed independently).
+
+name: Montgomery County York Rite
+short_name: Montgomery County York Rite
+state: Maryland
+email: website-contact@mcyorkrite.com
+tagline: Royal Arch · Cryptic Masonry · Knights Templar
+
+meeting_location:
+  lodge: "Pentalpha Lodge #194"
+  street: 20516 Boland Farm Road
+  city: Germantown
+  state: Maryland
+  state_code: MD
+  postal_code: "20876"
+  note: >-
+    Next to the medical center on the corner of Boland Farm Road and
+    Observation Drive, just east of I-270 at Exit 15 (Maryland 118).
+
+# Coordinates taken from the original site's embedded map (Pentalpha Lodge #194).
+coordinates:
+  latitude: "39.1932601"
+  longitude: "-77.2523117"
+
+meetings:
+  - day: Second Wednesday
+    time: 7:30 p.m.
+  - day: Fourth Wednesday
+    time: 7:30 p.m.
+
+# Google Calendar configuration for the events page.
+calendar:
+  # Calendar ID (preferred over the legacy e-mail address in the old embed).
+  id: 606ca60259602d624c2334646cedc5b31f1272bf88aa9dbcdbe70d9416de858e@group.calendar.google.com
+  timezone: America/New_York
+  color: "%23D50000"
+  # Link used for the "open the full calendar" fallback.
+  web_link: "https://calendar.google.com/calendar/u/0/r?cid=606ca60259602d624c2334646cedc5b31f1272bf88aa9dbcdbe70d9416de858e%40group.calendar.google.com"
+
+# Preserved from the original site footer.
+site_credit:
+  label: Site maintained by Justin Weeks
+  href: "https://jmweeks.com"

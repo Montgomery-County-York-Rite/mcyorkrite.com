@@ -1,0 +1,42 @@
+# Site configuration — Montgomery County York Rite
+# ---------------------------------------------------------------
+# Production settings. Local development: bundle exec jekyll serve
+
+title: Montgomery County York Rite
+email: website-contact@mcyorkrite.com
+description: >-
+  The York Rite Bodies of Montgomery County, Maryland — a Chapter of Royal
+  Arch Masons, a Council of Cryptic Masons, and a Commandery of Knights
+  Templar — meeting at Pentalpha Lodge #194 in Germantown, Maryland.
+
+url: "https://mcyorkrite.com"
+baseurl: ""
+permalink: pretty
+lang: en-US
+locale: en_US
+
+# Built with GitHub Actions; only this plugin is needed for sitemap.xml.
+plugins:
+  - jekyll-sitemap
+
+markdown: kramdown
+kramdown:
+  typographic_quotes: ["&ldquo;", "&rdquo;", "&lsquo;", "&rsquo;"]
+  entity_output: as_input
+
+# Keep development, migration, and documentation files out of _site.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - prompt.txt
+  - docs/
+  - scripts/
+  - tests/
+  - migration-archive/
+  - staging/
+  - vendor/
+  - .github/
+  - .gitignore
+  - .ruby-version
+  - Rakefile

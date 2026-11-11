@@ -1,0 +1,21 @@
+{%- comment -%}
+  Breadcrumbs. Pages provide page.breadcrumbs as an array of
+  { label, href } objects; the current page is appended automatically.
+{%- endcomment -%}
+
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <div class="container">
+    <ol class="breadcrumbs__list">
+      <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/">Home</a></li>
+      {%- for crumb in page.breadcrumbs -%}
+        <li class="breadcrumbs__item">
+          {%- if crumb.href -%}
+            <a class="breadcrumbs__link" href="{{ crumb.href }}">{{ crumb.label }}</a>
+          {%- else -%}
+            <span class="breadcrumbs__current" aria-current="page">{{ crumb.label }}</span>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ol>
+  </div>
+</nav>

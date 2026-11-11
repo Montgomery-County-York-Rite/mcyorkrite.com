@@ -1,0 +1,25 @@
+# Jekyll build output
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Dependency and tool directories
+vendor/
+.bundle/
+
+# Generator-only font binaries (fonts are downloaded at generation time;
+# the site serves only the committed WOFF2 subsets)
+scripts/fonts-tmp/
+
+# QA artifacts (screenshots, reports, fetched axe-core bundle)
+tests/qa-tmp/
+
+# Migration working files
+prompt.txt
+staging/
+
+# OS and editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*~

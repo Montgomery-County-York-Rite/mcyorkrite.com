@@ -1,0 +1,32 @@
+{%- comment -%}
+  Homepage hero. Decorative arch linework is an inline original SVG drawn at
+  low opacity; content is driven by page front matter.
+{%- endcomment -%}
+
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero__ornament" aria-hidden="true">
+    <svg viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax slice" focusable="false">
+      <g fill="none" stroke="#BA9555" stroke-width="1.5">
+        <path d="M-80 420 A 680 680 0 0 1 1280 420" stroke-opacity="0.10"/>
+        <path d="M0 420 A 600 600 0 0 1 1200 420" stroke-opacity="0.13"/>
+        <path d="M100 420 A 500 500 0 0 1 1100 420" stroke-opacity="0.10"/>
+        <path d="M190 420 A 410 410 0 0 1 1010 420" stroke-opacity="0.08"/>
+        <path d="M280 420 A 320 320 0 0 1 920 420" stroke-opacity="0.07"/>
+        <path d="M600 40 L600 420" stroke-opacity="0.10"/>
+        <path d="M120 420 V 240 H1080 V 420" stroke-opacity="0.05"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="container hero__inner">
+    <p class="hero__eyebrow">{{ page.hero.eyebrow }}</p>
+    <h1 class="hero__title" id="hero-title">{{ page.hero.title }}</h1>
+    <p class="hero__lede">{{ page.hero.lede }}</p>
+    <div class="hero__actions">
+      <a class="btn btn--gold" href="{{ page.hero.primary_href }}">{{ page.hero.primary_label }}</a>
+      <a class="btn btn--outline-light" href="{{ page.hero.secondary_href }}">{{ page.hero.secondary_label }}</a>
+    </div>
+  </div>
+
+  <div class="hero__baseline" aria-hidden="true"></div>
+</section>

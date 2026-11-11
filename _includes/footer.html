@@ -1,0 +1,65 @@
+<footer class="site-footer">
+  <div class="container">
+    <div class="site-footer__grid">
+
+      <div class="site-footer__col site-footer__col--identity">
+        <p class="site-footer__brand">
+          <span class="site-footer__brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="30" height="30" focusable="false">
+              <use href="/assets/images/mark.svg#keystone"></use>
+            </svg>
+          </span>
+          <span class="site-footer__brand-text">
+            <span class="site-footer__brand-overline">Montgomery County</span>
+            <span class="site-footer__brand-name">York Rite</span>
+          </span>
+        </p>
+        <p class="site-footer__blurb">
+          The York Rite Bodies of Montgomery County, Maryland — a Chapter of
+          Royal Arch Masons, a Council of Cryptic Masons, and a Commandery of
+          Knights Templar.
+        </p>
+      </div>
+
+      <nav class="site-footer__col" aria-label="Footer — the three bodies">
+        <h2 class="site-footer__heading">The Three Bodies</h2>
+        <ul class="site-footer__links">
+          {%- for body in site.data.bodies.bodies -%}
+            <li><a class="site-footer__link" href="{{ body.url }}">{{ body.name }}</a></li>
+          {%- endfor -%}
+          <li><a class="site-footer__link" href="/about/">About the York Rite</a></li>
+        </ul>
+      </nav>
+
+      <nav class="site-footer__col" aria-label="Footer — site links">
+        <h2 class="site-footer__heading">Explore</h2>
+        <ul class="site-footer__links">
+          <li><a class="site-footer__link" href="/">Home</a></li>
+          <li><a class="site-footer__link" href="/about/">About</a></li>
+          <li><a class="site-footer__link" href="/events/">Events</a></li>
+          <li><a class="site-footer__link" href="/contact/">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="site-footer__col" aria-label="Footer — contact information">
+        <h2 class="site-footer__heading">Contact</h2>
+        <address class="site-footer__address">
+          {{ site.data.organization.meeting_location.lodge }}<br>
+          {{ site.data.organization.meeting_location.street }}<br>
+          {{ site.data.organization.meeting_location.city }}, {{ site.data.organization.meeting_location.state_code }} {{ site.data.organization.meeting_location.postal_code }}
+        </address>
+        <a class="site-footer__link" href="mailto:{{ site.data.organization.email }}">{{ site.data.organization.email }}</a>
+        {%- assign cal = site.data.organization.calendar -%}
+        <a class="site-footer__link" href="{{ cal.web_link }}" target="_blank" rel="noopener">Calendar (opens Google)</a>
+      </div>
+
+    </div>
+
+    <div class="site-footer__legal">
+      <p>&copy; {{ site.time | date: "%Y" }} {{ site.title }}. All rights reserved.</p>
+      <p class="site-footer__credit">
+        Site maintained by <a href="{{ site.data.organization.site_credit.href }}" rel="noopener">Justin Weeks</a>.
+      </p>
+    </div>
+  </div>
+</footer>

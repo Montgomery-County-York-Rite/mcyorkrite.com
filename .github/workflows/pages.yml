@@ -1,0 +1,70 @@
+name: Deploy to GitHub Pages
+
+# Builds the Jekyll site with production settings, validates the generated
+# output, and publishes it via the supported GitHub Pages deployment flow.
+# Only pushes to main deploy; pull requests are validated separately by
+# validate.yml.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment; keep the latest run.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+env:
+  RUBY_VERSION: "3.3"
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+          bundler-cache: true # runs `bundle install` and caches gems
+
+      - name: Setup Python (validation tooling)
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Build Jekyll site (production)
+        env:
+          JEKYLL_ENV: production
+        run: |
+          bundle exec jekyll build \
+            --strict_front_matter \
+            --trace
+
+      - name: Validate generated output
+        run: |
+          python3 tests/validate_site.py _site
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-24.04
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

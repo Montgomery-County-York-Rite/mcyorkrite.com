@@ -1,0 +1,37 @@
+{%- comment -%}
+  Google Calendar embed with graceful fallbacks.
+  Configuration lives in _data/organization.yml. The iframe is lazy-loaded
+  and accompanied by a plain link to the same calendar (visible if the embed
+  cannot load, and to screen readers) plus a <noscript> variant.
+{%- endcomment -%}
+
+{%- assign cal = site.data.organization.calendar -%}
+{%- assign embed_src = "https://calendar.google.com/calendar/embed?src=" -%}
+{%- capture embed_id -%}{{ cal.id | replace: "@", "%40" }}{%- endcapture -%}
+
+<div class="calendar-embed" data-calendar>
+  <div class="calendar-frame">
+    <iframe
+      src="{{ embed_src }}{{ embed_id }}&ctz={{ cal.timezone | replace: '/', '%2F' }}&color={{ cal.color }}&showCalendars=1&showTabs=1&showTitle=0"
+      title="Public events calendar of the Montgomery County York Rite"
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <noscript>
+    <p class="calendar-fallback">
+      JavaScript is disabled, so the interactive calendar cannot be shown.
+      Open the calendar directly:
+      <a href="{{ cal.web_link }}" target="_blank" rel="noopener">{{ cal.web_link }}</a>
+    </p>
+  </noscript>
+
+  <p class="calendar-fallback">
+    If the calendar does not display above, open it directly in a new window:
+    <a href="{{ cal.web_link }}" target="_blank" rel="noopener">Montgomery County York Rite calendar</a>.
+  </p>
+  <p class="calendar-fallback calendar-fallback__tz">
+    All times are shown in the {{ cal.timezone | replace: "/", "/" }} time zone.
+  </p>
+</div>

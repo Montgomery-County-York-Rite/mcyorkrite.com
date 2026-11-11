@@ -1,0 +1,21 @@
+{
+  "name": "Montgomery County York Rite",
+  "short_name": "MC York Rite",
+  "description": "The York Rite Bodies of Montgomery County, Maryland.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#101E35",
+  "theme_color": "#101E35",
+  "icons": [
+    {
+      "src": "/assets/images/favicon-32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

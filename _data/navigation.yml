@@ -1,0 +1,31 @@
+# Primary site navigation. `active_on` marks pages whose URL begins with
+# `href` (used by _includes/navigation.html to highlight the current page).
+items:
+  - label: Home
+    href: "/"
+    active_on: "/"
+
+  - label: About
+    href: "/about/"
+    active_on: "/about/"
+    children:
+      - label: About the York Rite
+        href: "/about/"
+        description: The Montgomery County York Rite family
+      - label: Royal Arch Chapter
+        href: "/about/chapter/"
+        description: The first part of the York Rite
+      - label: Cryptic Council
+        href: "/about/council/"
+        description: The second part of the York Rite
+      - label: Knights Templar
+        href: "/about/commandery/"
+        description: The final order of the York Rite
+
+  - label: Events
+    href: "/events/"
+    active_on: "/events/"
+
+  - label: Contact
+    href: "/contact/"
+    active_on: "/contact/"

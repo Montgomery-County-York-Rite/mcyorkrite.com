@@ -1,0 +1,42 @@
+{%- comment -%}
+  Organization structured data. This block is intentionally static — it must
+  stay byte-identical on every page so the Content-Security-Policy hash in
+  _layouts/default.html remains valid. Facts come from _data/organization.yml;
+  coordinates are from the original site's embedded map.
+  No ratings, reviews, or event claims — only verified organization details.
+{%- endcomment -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Montgomery County York Rite",
+  "url": "https://mcyorkrite.com/",
+  "email": "website-contact@mcyorkrite.com",
+  "description": "The York Rite Bodies of Montgomery County, Maryland: a Chapter of Royal Arch Masons, a Council of Cryptic Masons, and a Commandery of Knights Templar, meeting at Pentalpha Lodge #194 in Germantown, Maryland.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "20516 Boland Farm Road",
+    "addressLocality": "Germantown",
+    "addressRegion": "MD",
+    "postalCode": "20876",
+    "addressCountry": "US"
+  },
+  "location": {
+    "@type": "Place",
+    "name": "Pentalpha Lodge #194",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "20516 Boland Farm Road",
+      "addressLocality": "Germantown",
+      "addressRegion": "MD",
+      "postalCode": "20876",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 39.1932601,
+      "longitude": -77.2523117
+    }
+  }
+}
+</script>

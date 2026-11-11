@@ -1,0 +1,32 @@
+{%- comment -%}
+  Renders the primary navigation from _data/navigation.yml.
+  Parameter: variant — "desktop" | "mobile" | "footer".
+  The current page is marked with aria-current="page" plus a visual state.
+{%- endcomment -%}
+
+<ul class="nav-list nav-list--{{ variant | default: 'desktop' }}">
+  {%- for item in site.data.navigation.items -%}
+    {%- assign is_current = false -%}
+    {%- if page.url == item.href -%}
+      {%- assign is_current = true -%}
+    {%- elsif item.active_on and item.active_on != "/" and page.url contains item.active_on -%}
+      {%- assign is_current = true -%}
+    {%- elsif item.active_on == "/" and page.url == "/" -%}
+      {%- assign is_current = true -%}
+    {%- endif -%}
+
+    <li class="nav-list__item{% if is_current %} is-current{% endif %}">
+      <a class="nav-link" href="{{ item.href }}"{% if is_current %} aria-current="page"{% endif %}>{{ item.label }}</a>
+
+      {%- if variant == "mobile" and item.children -%}
+        <ul class="nav-sublist">
+          {%- for child in item.children -%}
+            {%- if child.href != item.href -%}
+              <li class="nav-sublist__item"><a class="nav-sublink" href="{{ child.href }}">{{ child.label }}</a></li>
+            {%- endif -%}
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    </li>
+  {%- endfor -%}
+</ul>

@@ -1,0 +1,26 @@
+---
+# 404 page
+layout: default
+title: "Page Not Found"
+permalink: /404.html
+description: "The page you requested could not be found on the Montgomery County York Rite website."
+sitemap: false
+---
+
+<section class="error-section">
+  <div class="container error-section__inner">
+    <p class="error-section__code" aria-hidden="true">404</p>
+    <h1 class="error-section__title">Page not found</h1>
+    <p class="error-section__text">
+      The page you requested does not exist or has moved. Try one of the
+      destinations below, or
+      <a href="mailto:{{ site.data.organization.email }}">email us</a> if you
+      cannot find what you are looking for.
+    </p>
+    <div class="error-section__actions">
+      <a class="btn btn--primary" href="/">Go Home</a>
+      <a class="btn btn--outline" href="/about/">About the York Rite</a>
+      <a class="btn btn--outline" href="/events/">Events</a>
+    </div>
+  </div>
+</section>

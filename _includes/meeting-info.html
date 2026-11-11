@@ -1,0 +1,53 @@
+{%- comment -%}
+  Meeting schedule and location, driven by _data/organization.yml.
+  Used on the home, events, and contact pages so the facts live in one place.
+  Parameter: show_map — "true" renders the preserved Google Maps embed.
+{%- endcomment -%}
+
+<div class="meeting-info">
+  <div class="meeting-info__col">
+    <h3 class="meeting-info__heading">
+      <span class="eyebrow">Stated Meetings</span>
+    </h3>
+    <table class="meeting-table">
+      <caption class="visually-hidden">Meeting schedule for the Montgomery County York Rite bodies</caption>
+      <thead>
+        <tr><th scope="col">Meeting</th><th scope="col">Time</th></tr>
+      </thead>
+      <tbody>
+        {%- for meeting in site.data.organization.meetings -%}
+          <tr>
+            <th scope="row">{{ meeting.day }}</th>
+            <td>{{ meeting.time }}</td>
+          </tr>
+        {%- endfor -%}
+      </tbody>
+    </table>
+  </div>
+
+  <div class="meeting-info__col">
+    <h3 class="meeting-info__heading"><span class="eyebrow">Meeting Location</span></h3>
+    <p class="meeting-info__place">
+      <strong>{{ site.data.organization.meeting_location.lodge }}</strong><br>
+      {{ site.data.organization.meeting_location.street }}<br>
+      {{ site.data.organization.meeting_location.city }}, {{ site.data.organization.meeting_location.state_code }} {{ site.data.organization.meeting_location.postal_code }}
+    </p>
+    <p class="meeting-info__note">{{ site.data.organization.meeting_location.note }}</p>
+  </div>
+
+  {%- if include.show_map == "true" -%}
+    <div class="meeting-info__col meeting-info__col--map">
+      <h3 class="meeting-info__heading"><span class="eyebrow">Map</span></h3>
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3092.184331042707!2d-77.2523117!3d39.1932601!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b62c79b9143251%3A0xcd9f180125cba775!2sMasonic+Lodge+(Pentalpha+%23194)!5e0!3m2!1sen!2sus!4v1516250003227"
+          title="Map showing Pentalpha Lodge #194, 20516 Boland Farm Road, Germantown, Maryland"
+          width="600" height="360"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+  {%- endif -%}
+</div>
