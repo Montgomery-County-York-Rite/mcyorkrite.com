@@ -786,6 +786,18 @@ h1, h2, h3, h4 {
 
 .prose--page {
   padding-block: var(--section-y);
+  max-width: none;
+}
+
+/* Reading measure for running text; component blocks (card grids, calendar,
+   meeting info, map) are exempt so they can use the full container width. */
+.prose--page > p:not(.contact-email),
+.prose--page > h1,
+.prose--page > h2,
+.prose--page > h3,
+.prose--page > ul,
+.prose--page > ol:not(.progression-steps) {
+  max-width: 48rem;
 }
 
 /* 11. Body hero (Chapter / Council / Commandery) */
