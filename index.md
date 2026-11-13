@@ -4,12 +4,12 @@ layout: home
 title: "Home"
 seo_plain: true
 seo_title: "York Rite of Montgomery County, Maryland"
-description: "The York Rite Bodies of Montgomery County, Maryland: a Chapter of Royal Arch Masons, a Council of Cryptic Masons, and a Commandery of Knights Templar, meeting at Pentalpha Lodge #194, Germantown."
+description: "The York Rite Bodies of Montgomery County, Maryland: a Chapter of Royal Arch Masons, a Council of Cryptic Masons, and a Commandery of Knights Templar, meeting at Pentalpha Masonic Temple, Germantown."
 
 hero:
   eyebrow: "Montgomery County · Maryland"
   title: "Welcome to the York Rite of Montgomery County"
-  lede: "A fellowship of Royal Arch, Cryptic, and Templar Masons. The Montgomery County York Rite is a collection of Appendant Bodies that operate independently of each other."
+  lede: "A fellowship of Royal Arch, Cryptic, and Templar Masons. The Montgomery County York Rite is a collection of appendant bodies that operate independently of each other."
   primary_label: "Discover the York Rite"
   primary_href: "/about/"
   secondary_label: "Contact Us"
@@ -32,7 +32,7 @@ hero:
         officers, degrees or orders, and traditions.
       </p>
       <p>
-        If you are a Master Mason in good standing from a regular Jurisdiction,
+        If you are a Master Mason in good standing from a regular jurisdiction,
         you may be eligible to join.
       </p>
     </div>
@@ -83,7 +83,7 @@ hero:
       </p>
       <p>
         In Montgomery County, the three bodies meet together at Pentalpha
-        Lodge #194 in Germantown, sharing in ritual, fellowship, and support
+        Masonic Temple in Germantown, sharing in ritual, fellowship, and support
         for their communities.
       </p>
       <a class="arrow-link" href="/about/">Read more about the York Rite<span class="visually-hidden">: on the About page</span></a>

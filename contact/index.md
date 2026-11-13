@@ -3,7 +3,7 @@
 layout: page
 title: "Contact"
 lede: "Get in touch with the Montgomery County York Rite bodies."
-description: "Contact the Montgomery County York Rite. The bodies meet at Pentalpha Lodge #194, 20516 Boland Farm Road, Germantown, Maryland, on the second and fourth Wednesdays at 7:30 p.m."
+description: "Contact the Montgomery County York Rite. The bodies meet at Pentalpha Masonic Temple, 20516 Boland Farm Road, Germantown, Maryland, on the second and fourth Wednesdays at 7:30 p.m."
 breadcrumbs:
   - label: "Contact"
 ---
@@ -22,7 +22,7 @@ as soon as we can.
 ## Where we meet
 
 The Montgomery County York Rite bodies meet at
-{{ site.data.organization.meeting_location.lodge }}. The lodge is located at
+{{ site.data.organization.meeting_location.lodge }}. The temple is located at
 {{ site.data.organization.meeting_location.street }}, next to the medical
 center on the corner of Boland Farm Road and Observation Drive, just east of
 I-270 at Exit 15 (Maryland 118).

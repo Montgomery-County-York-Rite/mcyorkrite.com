@@ -127,7 +127,7 @@ def make_og_image() -> None:
     draw.line([(420, 462), (780, 462)], fill=GOLD, width=2)
 
     center("The York Rite Bodies of Montgomery County, Maryland", sans_small, (248, 244, 233, 200), 486)
-    center("Meeting at Pentalpha Lodge #194 · Germantown, Maryland", sans_small, (248, 244, 233, 170), 524)
+    center("Meeting at Pentalpha Masonic Temple · Germantown, Maryland", sans_small, (248, 244, 233, 170), 524)
 
     # Flatten onto navy and save optimized.
     out = Image.new("RGB", img.size, NAVY[:3])

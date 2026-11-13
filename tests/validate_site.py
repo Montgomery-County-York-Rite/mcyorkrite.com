@@ -71,7 +71,7 @@ REDIRECT_PAGES = {
 # (page, list of phrases from the original site).
 MIGRATION_COVERAGE = {
     "index.html": [
-        "collection of Appendant Bodies",
+        "collection of appendant bodies",
         "Master Mason in good standing",
         "don\u2019t hesitate to contact us",
     ],
@@ -85,7 +85,7 @@ MIGRATION_COVERAGE = {
         "final order joined in the York Rite",
     ],
     "about/chapter/index.html": [
-        "first part of the York Rite system of the Masonic degrees",
+        "first part of the York Rite system of Masonic degrees",
         "Mark Master Mason",
         "Past Master",
         "Most Excellent Master",
@@ -120,7 +120,7 @@ MIGRATION_COVERAGE = {
     ],
     "contact/index.html": [
         "website-contact@mcyorkrite.com",
-        "Pentalpha Lodge #194",
+        "Pentalpha Masonic Temple",
         "20516 Boland Farm Road",
         "Germantown",
         "20876",

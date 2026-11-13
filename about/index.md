@@ -11,12 +11,12 @@ seo_title: "About"
 
 ## What is the York Rite?
 
-The Montgomery County York Rite is a collection of Appendant Bodies that
+The Montgomery County York Rite is a collection of appendant bodies that
 operate independently of each other. Each body continues the Masonic story
 beyond the three degrees of the Symbolic Lodge, and each confers its own
 degrees or orders.
 
-If you are a Master Mason in good standing from a regular Jurisdiction, you
+If you are a Master Mason in good standing from a regular jurisdiction, you
 may be eligible to join.
 
 ## The three bodies
@@ -43,7 +43,7 @@ The three bodies form a recognized progression within the Rite:
 </ol>
 
 - **The Chapter confers the Capitular degrees.** Royal Arch Masonry is the
-  first part of the York Rite system of the Masonic degrees.
+  first part of the York Rite system of Masonic degrees.
 - **The Council confers the Cryptic degrees.** Cryptic Masonry is the second
   part of the York Rite system of Masonic degrees.
 - **The Commandery confers the Templar orders.** The Knights Templar is the

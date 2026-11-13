@@ -100,12 +100,12 @@ meeting on 25 November), confirming public display permission.
 
 | Original element | Treatment |
 |---|---|
-| "The Montgomery County York Rite bodies meet at Pentalpha Lodge #194. This lodge is located at 20516 Boland Farm Road, next to the medical center on the corner of Boland Farm Road and Observation Drive. Just East of I-270 at Exit 15 (Maryland 118)" | Preserved verbatim under "Where we meet" |
+| "The Montgomery County York Rite bodies meet at Pentalpha Lodge #194. This lodge is located at 20516 Boland Farm Road, next to the medical center on the corner of Boland Farm Road and Observation Drive. Just East of I-270 at Exit 15 (Maryland 118)" | Preserved under "Where we meet". **Editorial change (2026-11-13, owner correction):** the venue is named "Pentalpha Masonic Temple" (the building), not "Pentalpha Lodge #194" (the lodge that meets in it), and the sentence now reads "The temple is located at…" |
 | "Phone: Please e-mail" | Preserved as "There is no public telephone listing — please email us…" |
 | Email (Cloudflare-obfuscated link, decoded during migration) | Decoded to `website-contact@mcyorkrite.com`; now a plain clickable `mailto:` link |
 | Address: "20516 Boland Farm Rd, Germantown, MD 20876" | Preserved, with a copy-to-clipboard button and a Google Maps directions link |
 | Meeting hours table: Second Wednesday 7:30pm; Fourth Wednesday 7:30pm | Preserved verbatim (times normalized typographically to "7:30 p.m.") |
-| Google Maps embed (Pentalpha Lodge #194) | Preserved with identical embed URL; added `title`, `loading="lazy"`, responsive frame |
+| Google Maps embed (Pentalpha Lodge #194) | Preserved with identical embed URL; added `title` (now naming Pentalpha Masonic Temple), `loading="lazy"`, responsive frame |
 
 ## 8. `/history/` → `history/index.html`
 
@@ -151,3 +151,15 @@ Justified redirect to `/`. Original page was an empty theme index
    honorary Super Excellent Master degree) that the original site never
    enumerated. The history texts state documented facts only, hedge
    disputed origins, and disclose no ritual.
+9. 2026-11-13 (owner correction): the meeting venue is named "Pentalpha
+   Masonic Temple" throughout (meta descriptions, meeting cards, map
+   frame title, structured data, generated social card) rather than
+   "Pentalpha Lodge #194". The lodge is the organization that meets in
+   the temple; contact points are attributed to the Montgomery County
+   York Rite bodies, whose footer address block now leads with the site
+   name followed by the venue.
+10. 2026-11-13 (copy normalization): mid-sentence capitalizations in
+    migrated text normalized to sentence case: "Appendant Bodies" →
+    "appendant bodies", "regular Jurisdiction" → "regular jurisdiction",
+    and "the York Rite system of the Masonic degrees" → "the York Rite
+    system of Masonic degrees". No meaning changed.

@@ -127,26 +127,33 @@ cutover since this environment could not run Lighthouse itself.
 
 ## 9. Deployment validation status
 
-The pipeline was exercised end-to-end on GitHub's own infrastructure:
+The pipeline is fully operational on GitHub's infrastructure. The
+repository-level Pages enablement (once blocked) was completed by an
+administrator; every push to `main` now builds, validates, and deploys
+automatically.
 
 | Item | Status |
 |---|---|
-| Workflow triggered on push to `main` | ✅ Run #3 (`140eea3`) |
-| Setup Ruby (provisions 3.3.13; Gemfile allows `~> 3.3`) and locked bundle install | ✅ Pass |
+| Workflow triggered on push to `main` | ✅ latest run (`bd94422`) and predecessors |
+| Setup Ruby (`~> 3.3`) and locked bundle install | ✅ Pass |
 | Jekyll production build (`--strict_front_matter`) on `ubuntu-24.04` | ✅ Pass |
 | `tests/validate_site.py` executed in CI against the CI build | ✅ Pass |
 | Pages artifact upload (`actions/upload-pages-artifact@v3`) | ✅ Pass |
-| Deploy (`actions/deploy-pages@v4`) | ⏳ **Blocked on one administrator setting** — the repository has never had GitHub Pages enabled (`has_pages: false`, confirmed via the GitHub API). Until **Settings → Pages → Build and deployment → Source: "GitHub Actions"** is selected, the deploy step fails. A deploy key cannot change repository settings, so this is reported rather than claimed done |
-| Pages source / custom domain / Enforce HTTPS | ⏳ Same administrator pass; exact steps and DNS records in deployment.md |
-| Live production site | Untouched — the existing site keeps serving until DNS is pointed at Pages, which remains an explicit organizational decision |
+| Deploy (`actions/deploy-pages@v4`) | ✅ Pass |
+| Live production site | ✅ https://mcyorkrite.com serving the deployed build (in front of Cloudflare) |
 
 Two earlier runs surfaced and fixed real CI defects: a bleeding-edge
 Bundler 4 lockfile the runner toolchain could not satisfy (re-locked to the
 widely supported 2.5 line with Linux platforms added), and a Ruby patch
 pin (`3.3.6`) that clashed with the runner's newer `3.3.13` (relaxed to
-`~> 3.3`). The build+validate half of the pipeline is therefore proven
-green on GitHub infrastructure; only the repository-level Pages enablement
-remains.
+`~> 3.3`).
+
+**2026-11-13 re-validation** after the venue-rename and design pass: axe
+audits clean on all audited pages at desktop width, 16 interaction checks
+pass, the validator passes on 22 built pages, the external link checker
+reports 25 OK / 0 warnings / 0 broken, no horizontal overflow at 320 px or
+390 px on any audited page, and footer/breadcrumb touch targets were
+enlarged to 36 px height.
 
 ## 10. Remaining issues (none critical)
 

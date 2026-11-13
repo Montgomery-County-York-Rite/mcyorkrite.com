@@ -757,6 +757,10 @@ h1, h2, h3, h4 {
 .breadcrumbs__link {
   color: rgba(248, 244, 233, 0.82);
   text-decoration: none;
+  /* Enlarge the touch target toward 44px without shifting the layout. */
+  display: inline-block;
+  padding: 0.45rem 0.3rem;
+  margin: -0.45rem -0.3rem;
 }
 
 .breadcrumbs__link:hover {
@@ -1700,7 +1704,9 @@ h1, h2, h3, h4 {
 
 .site-footer__col .site-footer__link {
   display: inline-block;
-  margin-bottom: 0.45rem;
+  margin-bottom: 0.15rem;
+  /* Generous vertical padding keeps footer links easy to tap on mobile. */
+  padding: 0.3rem 0;
 }
 
 .site-footer__col .site-footer__address + .site-footer__link {

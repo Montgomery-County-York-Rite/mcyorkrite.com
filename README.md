@@ -2,7 +2,7 @@
 
 The public website of the Montgomery County York Rite bodies (Maryland):
 a Chapter of Royal Arch Masons, a Council of Cryptic Masons, and a
-Commandery of Knights Templar, meeting at Pentalpha Lodge #194 in
+Commandery of Knights Templar, meeting at Pentalpha Masonic Temple in
 Germantown, Maryland.
 
 - **Production URL:** <https://mcyorkrite.com>

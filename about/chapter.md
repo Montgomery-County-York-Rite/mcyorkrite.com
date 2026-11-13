@@ -4,7 +4,7 @@ layout: body
 body_key: chapter
 title: "Chapter of Royal Arch Masons"
 seo_title: "Royal Arch Chapter"
-description: "The Chapter of Royal Arch Masons of Montgomery County, Maryland. Royal Arch Masonry is the first part of the York Rite system of the Masonic degrees, with four conferring degrees."
+description: "The Chapter of Royal Arch Masons of Montgomery County, Maryland. Royal Arch Masonry is the first part of the York Rite system of Masonic degrees, with four conferring degrees."
 breadcrumbs:
   - label: "About"
     href: "/about/"
@@ -14,7 +14,7 @@ cta:
   text: "If you are a Master Mason in good standing and would like to find out more about the Chapter, please get in touch."
 ---
 
-Royal Arch Masonry is the first part of the York Rite system of the Masonic
+Royal Arch Masonry is the first part of the York Rite system of Masonic
 degrees.
 
 ## Degrees of the Chapter
